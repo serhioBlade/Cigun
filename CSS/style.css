@@ -1,0 +1,300 @@
+body{
+    font-family: montserrat;
+    margin: 0;
+    
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+.leftLogo,.rightlogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 19%;
+}
+.leftLogo>img{
+    width: 28%;
+}
+.rightlogo>img{
+    width: 42%;
+}
+.rightlogo{
+    flex-direction: row-reverse;
+    width: 22%;
+}
+.school_logo_text{
+    color:white;
+}
+.school_logo_text>
+p:first-child{
+    font-weight: bold;
+    font-size: 1vw;
+    margin-bottom: 10px;
+}
+
+.school_logo_text>
+p:last-child{
+    font-size: 0.75vw;
+    margin: 0;
+}
+.right>p{
+    text-align: right;
+}
+#menu__toggle{
+    display: none;
+    position: relative;
+}
+.menu__box{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+.menu__box a{
+    text-decoration: none;
+    font-weight:400;
+    color:white;
+    font-size: 0.8vw;
+}
+.menu__box a{
+    padding-bottom: 4px;
+    border-bottom:3px solid #cfa74900;
+    transition: 0.3s;
+}
+.menu__box a:hover{
+    border-bottom:3px solid #CFA649;
+    padding-bottom: 4px;
+}
+.main,
+.about,
+.lessons,
+.find,
+.gallery,
+.forum,
+.Articles{
+    border-bottom:3px solid #CFA649 !important;
+    padding-bottom: 4px !important;
+}
+
+header{
+    background-image: url(../img/bgImg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5% 13.3% ;
+}
+.headerText{
+    width: 43%;
+}
+.headerImg{
+    width: 24%;
+}
+.headerImg>img{
+    width: 100%;
+}
+h1{
+    font-family: Playfair;
+    color:#FFC94F;
+    font-size: 4.2vw;
+    margin-bottom: 0;
+}
+.headerText>p{
+    color: white;
+    font-size: 1.1vw;
+    line-height:170%;
+    
+}
+.headerInfo{
+    display: flex;
+    justify-content: space-between;
+
+}
+.headerImg{
+    background-image: url(../img/Ellipse\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y:24%;
+}
+.headerImg>p{
+    position: relative;
+    bottom: 20%;
+    left: 40%;
+    font-family: Playfair;
+    color:#FFC94F;
+    font-size: 1.8vw;
+}
+.headerText button{
+    background-color: #FFC94F;
+    border: none;
+    outline: none;
+    padding: 3% 16%;
+    color: white;
+    font-size: 1vw;
+    border-radius: 100px;
+    margin-top: 4%;
+}
+.cigun{
+    padding: 9% 13.3%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:center;
+    background-image: url(../img/BgCigun.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.cigun>img{
+    width: 35%;
+}
+.cigunText{
+    width: 60%;
+}
+.cigunText>h2{
+    font-family: Playfair;
+    color: #426C59;
+    font-size: 2.5vw;
+    font-weight:normal;
+    margin-bottom: 0;
+
+}
+.cigunText>p{
+    font-size: 1vw;
+    line-height: 200%;
+    font-weight: 300;
+}
+@media(max-width:768px) {
+    header{
+        padding-top: 3%;
+        padding-bottom: 15%;
+    }
+    .headerText button{
+        font-size: 1.5vw;
+        padding: 3% 10%;
+    }
+    #menu__toggle {
+        opacity: 0;
+      }
+      #menu__toggle:checked + .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        left: 0 !important;
+      }
+      .menu__btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #CFA649;
+        transition-duration: .25s;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: #ECEFF1;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+      }
+      .menu__item {
+        display: inline-block;
+        margin:10px 24px;
+        color: #333 !important;
+        font-family: montserrat;
+        font-size: 20px !important;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+      }
+     
+      .school_logo_text{
+        color:#333;
+    }
+    .rightlogo>img{
+        width: 70px;
+    }
+    .leftLogo>img{
+        width: 60px;
+    }
+    .leftLogo,.rightlogo{
+        width: 170px;
+        align-items:center;
+        margin: 20px 24px;
+    }
+    .school_logo_text>
+    p:first-child{
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+    .school_logo_text>
+    p:last-child{
+        font-size: 8px;
+    }
+    .rightlogo{
+        flex-direction: row;
+    }
+    .right>p{
+        text-align: left;
+    }
+
+}
+@media(max-width:425px){
+    .headerImg{
+        display: none;
+    }
+    .headerText{
+        width: 100%;
+        text-align: center;
+    }
+    .headerText>p{
+        font-size: 1.5vw;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    .headerText button{
+        font-size: 2vw;
+    }
+    .cigun{
+        display: block;
+        text-align: center;
+    }
+    .cigunText{
+        width: 100%;
+    }
+}
