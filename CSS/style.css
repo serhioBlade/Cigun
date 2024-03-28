@@ -165,8 +165,8 @@ h1{
 }
 @media(max-width:768px) {
     header{
-        padding-top: 3%;
-        padding-bottom: 15%;
+        padding-top: 4%;
+        padding-bottom: 14%;
     }
     .headerText button{
         font-size: 1.5vw;
@@ -274,6 +274,11 @@ h1{
 
 }
 @media(max-width:425px){
+    header{
+        padding-top: 3%;
+        padding-bottom: 35%;
+        background-size: 140%;
+    }
     .headerImg{
         display: none;
     }
