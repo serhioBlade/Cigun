@@ -213,6 +213,7 @@ h2,h3{
     padding: 0 13.3%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .form{
     width: 40%;
