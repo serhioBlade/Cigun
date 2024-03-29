@@ -197,11 +197,32 @@ h2,h3{
     margin-top: 8%;
 }
 .trainingCard>img{
-    width: 30%;
+    width: 40%;
 }
-
-
-
+.trainer{
+    flex-direction: row-reverse;
+}
+.trainer>.cigunText{
+    text-align: right;
+    width: 55%;
+}
+.trainer>img{
+    width:40%;
+}
+.contactForm{
+    padding: 0 13.3%;
+    display: flex;
+    justify-content: space-between;
+}
+.form{
+    width: 40%;
+}
+.map{
+    width: 50%;
+}
+.map>iframe{
+    border-radius: 20px;
+}
 @media(max-width:768px) {
 
     
@@ -396,5 +417,12 @@ h2,h3{
     }
     .allTrainigCards,.secodLine{
         justify-content: center;
+    }
+    .trainer>.cigunText{
+        width: 100%;
+        text-align: center;
+    }
+    .trainer h2{
+        margin-top: 0;
     }
 }
