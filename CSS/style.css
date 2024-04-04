@@ -250,6 +250,85 @@ h2,h3{
 .form button{
     margin-top: 10%;
 }
+.contact{
+    width: 25%;
+}
+
+footer{
+    background-color:#2D7554;
+    padding: 5% 13.3%;
+
+}
+
+.contactHeading>h3{
+    font-size: 1.5vw;
+    color: white;
+    margin-top: 0;
+    margin-left: 8%;
+}
+.contactHeading{
+    display: flex;
+}
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contactHeading>img{
+    width: 15%;
+}
+.contactInfo{
+    color: white;
+    margin-left: 23%;
+    font-weight: 200;
+    line-height: 180%;
+    font-size: 1vw;
+}
+.contactInfo>p{
+    margin-top: 0;
+}
+.contactForm{
+    margin-bottom: 5%;
+}
+.footerInfo{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.socialNetworks>h2{
+    font-family:Montserrat !important;
+    font-weight:500;
+    color: #FFC94F;
+    text-align: center;
+
+}
+.logo,.socialNetworks{
+    width: 28%;
+}
+.logo>img{
+    width: 76%;
+}
+.logo:first-child>img{
+    width: 42%;
+}
+.socialLinks{
+    display: flex;
+    justify-content: space-between;
+}
+.logo:first-child{
+    text-align: left;
+}
+.logo{
+    text-align: right;
+}
+.socialNetworks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}.socialLinks>img{
+    width: 20%;
+}
 @media(max-width:768px) {
 
     #menu__toggle {
@@ -389,7 +468,7 @@ h2,h3{
     }
     .map{
         width: 100%;
-        margin: 10%;
+        margin: 10% 0 ;
         height: 500px;
     }
     .userInfo>input{
@@ -399,9 +478,20 @@ h2,h3{
         font-size: 2.5vw;
         margin-top: 5%;
     }
+    .contact{
+        width: 40%;
+    }
+    .contactHeading>h3{
+        font-size: 2.4vw;
+    }
+    .contactInfo>p{
+        font-size: 1.8vw;
+        line-height: 180%;
+    }
 }
 
 @media(max-width:425px){
+
     header{
         padding-top: 3%;
         padding-bottom: 20%;
@@ -486,5 +576,21 @@ h2,h3{
     .form button{
         font-size: 3vw;
         margin-top: 5%;
+    }
+    .contacts{
+        justify-content: center;
+    }
+    .contact{
+        width: 70%;
+    }
+    .contact h3{
+        font-size: 4vw;
+    }
+    .contactInfo>p{
+        font-size: 3vw;
+        line-height: 180%;
+    }
+    .socialNetworks>h2{
+        font-size: 2.5vw;
     }
 }
