@@ -219,8 +219,11 @@ h2,h3{
 .form{
     width: 35%;
     border:4px solid #ffca4fbb;
-    padding: 2% 0 2% 5%;
+    padding:5%;
     border-radius: 20px;
+}
+.map>h2{
+    margin:4.8% 0;
 }
 .map{
     width: 50%;
@@ -228,7 +231,8 @@ h2,h3{
 .map>iframe{
     border-radius: 20px;
 }
-.form>h2{
+.form>h2
+{
     margin: 0;
 }
 .form h3{
@@ -248,7 +252,7 @@ h2,h3{
     padding-bottom: 20%;
 }
 .form button{
-    margin-top: 10%;
+    margin-top: 7%;
 }
 .contact{
     width: 25%;
@@ -329,6 +333,7 @@ footer{
 }.socialLinks>img{
     width: 20%;
 }
+
 @media(max-width:768px) {
 
     #menu__toggle {
@@ -565,7 +570,7 @@ footer{
     }
 
     .form{
-        margin-bottom: 20%;
+        margin-bottom: 5%;
     }
     .form h3{
         font-size: 3vw;
@@ -592,5 +597,8 @@ footer{
     }
     .socialNetworks>h2{
         font-size: 2.5vw;
+    }
+    .form>h2,.map>h2{
+        text-align: center;
     }
 }
