@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: montserrat;
     margin: 0;
@@ -44,7 +47,7 @@ p:last-child{
     display: none;
     position: relative;
 }
-.menu__box{
+.menu{
     display: flex;
     padding: 0;
     margin: 0;
@@ -52,28 +55,22 @@ p:last-child{
     list-style: none;
     align-items: center;
 }
-.menu__box a{
+.menu a{
     text-decoration: none;
     font-weight:400;
     color:white;
     font-size: 0.8vw;
 }
-.menu__box a{
+.menu a{
     padding-bottom: 4px;
     border-bottom:3px solid #cfa74900;
     transition: 0.3s;
 }
-.menu__box a:hover{
+.menu a:hover{
     border-bottom:3px solid #CFA649;
     padding-bottom: 4px;
 }
-.main,
-.about,
-.lessons,
-.find,
-.gallery,
-.forum,
-.Articles{
+.current a{
     border-bottom:3px solid #CFA649 !important;
     padding-bottom: 4px !important;
 }
@@ -223,7 +220,7 @@ h2,h3{
     border-radius: 20px;
 }
 .map>h2{
-    margin:4.8% 0;
+    margin:10.5% 0 5.8% 0 ;
 }
 .map{
     width: 50%;
@@ -350,7 +347,7 @@ footer{
       top: 0;
       transform: rotate(90deg);
     }
-    #menu__toggle:checked ~ .menu__box {
+    #menu__toggle:checked ~ .menu {
       left: 0 !important;
     }
     .menu__btn {
@@ -380,7 +377,7 @@ footer{
       content: '';
       top: 8px;
     }
-    .menu__box {
+    .menu {
       display: block;
       position: fixed;
       top: 0;
@@ -394,13 +391,13 @@ footer{
       box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
       transition-duration: .25s;
     }
-    .menu__item {
+    .menu a {
       display: inline-block;
       margin:10px 24px;
       color: #333 !important;
       font-family: montserrat;
       font-size: 20px !important;
-      font-weight: 600;
+      font-weight: 350;
       text-decoration: none;
       transition-duration: .25s;
     }
